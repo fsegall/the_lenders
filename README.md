@@ -24,7 +24,7 @@
 - [ ] Implementar criação de perfil (empreendedor e financiador) — _`backend`, `perfil`_
 - [ ] Criar formulário de pedido de empréstimo — _`frontend`, `empréstimo`_
 - [ ] Listagem pública dos pedidos de empréstimo — _`frontend`, `listagem`_
-- [ ] Criar página de análise de crédito com ZK proofs.
+- [ ] Criar UI da página de análise de crédito com ZK proofs.
 
 #### ✅ M3: Smart Contracts
 - [ ] Escrever smart contract de empréstimo P2P — _`solidity`, `contrato`_
