@@ -16,7 +16,7 @@
 ### 🚩 Milestones e Issues
 
 #### ✅ M1: Setup inicial
-- [ ] Setup do projeto base (React + ethers.js) — _`setup`, `frontend`_
+- [ ] Setup do projeto base (React + Viem) — _`setup`, `frontend`_
 - [ ] Conectar MetaMask ao frontend — _`web3`, `frontend`_
 - [ ] Criar layout inicial (landing + navegação) — _`ui/ux`_
 
