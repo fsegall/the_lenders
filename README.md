@@ -30,7 +30,7 @@
 - [ ] Escrever smart contract de empréstimo P2P — _`solidity`, `contrato`_
 - [ ] Testar contrato com Hardhat — _`solidity`, `testes`_
 - [ ] Deploy do contrato na testnet — _`deploy`, `testnet`_
-- [ ] Escrever smart contract de análise de crédito usando ZK proofs e ZKVERIFY
+- [ ] Escrever circuits de análise de crédito usando ZK proofs e ZKVERIFY
 
 #### ✅ M4: Financiamento e Reembolso
 - [ ] Integrar financiamento com smart contract — _`web3`, `integração`_
