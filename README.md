@@ -24,11 +24,13 @@
 - [ ] Implementar criação de perfil (empreendedor e financiador) — _`backend`, `perfil`_
 - [ ] Criar formulário de pedido de empréstimo — _`frontend`, `empréstimo`_
 - [ ] Listagem pública dos pedidos de empréstimo — _`frontend`, `listagem`_
+- [ ] Criar página de análise de crédito com ZK proofs.
 
-#### ✅ M3: Smart Contract
+#### ✅ M3: Smart Contracts
 - [ ] Escrever smart contract de empréstimo P2P — _`solidity`, `contrato`_
 - [ ] Testar contrato com Hardhat — _`solidity`, `testes`_
 - [ ] Deploy do contrato na testnet — _`deploy`, `testnet`_
+- [ ] Escrever smart contract de análise de crédito usando ZK proofs e ZKVERIFY
 
 #### ✅ M4: Financiamento e Reembolso
 - [ ] Integrar financiamento com smart contract — _`web3`, `integração`_
