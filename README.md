@@ -28,7 +28,7 @@
 
 #### ✅ M3: Smart Contracts
 - [ ] Escrever smart contract de empréstimo P2P — _`solidity`, `contrato`_
-- [ ] Testar contrato com Hardhat — _`solidity`, `testes`_
+- [ ] Testar contrato com Foundry — _`solidity`, `testes`_
 - [ ] Deploy do contrato na testnet — _`deploy`, `testnet`_
 - [ ] Escrever circuits de análise de crédito usando ZK proofs e ZKVERIFY
 
