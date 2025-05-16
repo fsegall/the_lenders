@@ -4,7 +4,7 @@ Este projeto é um MVP para uma plataforma que conecta pequenos empreendedores a
 
 ---
 
-## 🧱 Arquitetura Modular
+## 🧱 [`Arquitetura Modular`](Arquitetura.png)
 
 | Módulo             | Descrição |
 |--------------------|-----------|
@@ -38,7 +38,7 @@ Veja a [documentação do módulo zk-credit](README-zk-credit.md) para:
 
 ---
 
-## ⚙️ Supabase
+## ⚙️ [`Supabase`](er_diagram.png)
 
 A estrutura de banco de dados inclui:
 
@@ -89,7 +89,7 @@ O módulo a ser incluído em `foundry/` conterá:
 
 ---
 
-## 🧪 Como contribuir
+## [`🧪 Como contribuir`](roadmap.md)
 
 Clone o projeto, instale as dependências em cada módulo, e siga os respectivos READMEs. Cada módulo é autônomo, mas se comunica com os demais via APIs, contratos e banco.
 
