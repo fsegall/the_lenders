@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban Roadmap entre-chain-lend</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7fafc;
+      margin: 0;
+      padding: 2em;
+    }
+    h1 {
+      text-align: center;
+      color: #2d3748;
+    }
+    .board {
+      display: flex;
+      gap: 2em;
+      justify-content: space-around;
+    }
+    .column {
+      flex: 1;
+      background: #edf2f7;
+      border-radius: 8px;
+      padding: 1em;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .column h2 {
+      text-align: center;
+      color: #2a4365;
+    }
+    .task {
+      background: white;
+      padding: 0.8em;
+      border-radius: 6px;
+      margin-bottom: 0.6em;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      cursor: move;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kanban Roadmap: entre-chain-lend</h1>
+  <div class="board">
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>To Do</h2>
+      <div class="task" draggable="true" ondragstart="drag(event)">Criar smart contract de empréstimo (Foundry)</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Testar contrato com Forge</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Implementar lógica de reembolso</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Integrar contrato ao frontend (Viem)</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Exibir status dos pedidos (aceito, financiado, quitado)</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Gravar vídeo de apresentação do MVP</div>
+    </div>
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Doing</h2>
+      <div class="task" draggable="true" ondragstart="drag(event)">Criar fluxo automatizado de score com N8N</div>
+    </div>
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Done</h2>
+      <div class="task" draggable="true" ondragstart="drag(event)">Setup do projeto base (React + Viem)</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Conectar carteira Web3 ao frontend</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Criar layout inicial (landing + navegação)</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Implementar login Web3 (Supabase + wallet-auth)</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Criar e persistir perfil (empreendedor/financiador)</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Criar formulário de lances de empréstimo</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Listar lances públicos</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Criar estratégia de automação de score com N8N</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Gerar prova ZK local com Circom/snarkjs</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Verificar prova via ZKVerify com Edge Function</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">UI para ações como “financiar” e “quitar”</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Responsividade e refino visual</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Criar documentação técnica por módulo</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Gerar diagramas ER e arquitetura</div>
+      <div class="task" draggable="true" ondragstart="drag(event)">Preparar pitch técnico (PDF + script)</div>
+    </div>
+  </div>
+
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.outerHTML);
+      ev.target.remove();
+    }
+    function drop(ev) {
+      ev.preventDefault();
+      const data = ev.dataTransfer.getData("text");
+      ev.target.closest(".column").insertAdjacentHTML("beforeend", data);
+    }
+  </script>
+</body>
+</html>
