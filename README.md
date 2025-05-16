@@ -30,7 +30,7 @@ Este projeto é um MVP para uma plataforma que conecta pequenos empreendedores a
 
 ## 🧪 Módulo ZK: zk-credit
 
-Veja a [documentação do módulo zk-credit](zk-credit/README.md) para:
+Veja a [documentação do módulo zk-credit](README-zk-credit.md) para:
 
 - Compilação de circuitos
 - Geração de provas
