@@ -38,7 +38,7 @@ Veja a [documentação do módulo zk-credit](README-zk-credit.md) para:
 
 ---
 
-## ⚙️ Supabase
+## ⚙️ [`Supabase`](er_diagram.png)
 
 A estrutura de banco de dados inclui:
 
