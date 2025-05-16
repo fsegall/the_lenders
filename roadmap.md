@@ -13,7 +13,7 @@
 
 ---
 
-## 🚩 Milestones e Issues
+## 🚩 Milestones e Issues --> [`Kanban Interativo`](kanban-roadmap-interativo.html)
 
 ### ✅ M1: Setup e Integrações Iniciais
 - [x] Setup do projeto base (React + Viem) — _`setup`, `frontend`_
