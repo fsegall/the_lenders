@@ -1,0 +1,41 @@
+🎤 Pitch Técnico: entre-chain-lend
+Duração total sugerida: 6 minutos
+
+---
+
+⏱️ 00:00 — 00:30 | Propósito
+“entre-chain-lend é uma plataforma que conecta pequenos empreendedores a financiadores usando contratos inteligentes e provas de conhecimento zero. Nosso foco é privacidade e acesso justo ao crédito.”
+
+---
+
+⏱️ 00:30 — 01:15 | Problema
+“Milhões de pequenos empreendedores enfrentam obstáculos para conseguir crédito. Muitos são obrigados a expor dados sensíveis ou aceitar juros abusivos. Nossa proposta é preservar a privacidade do usuário usando ZK proofs.”
+
+---
+
+⏱️ 01:15 — 02:15 | Solução
+“Criamos um fluxo integrado: o usuário se autentica com carteira, um agente calcula seu score de crédito automaticamente, uma prova ZK é gerada localmente, e enviada para verificação em uma função Supabase. Se validada, o contrato inteligente pode ser acionado.”
+
+---
+
+⏱️ 02:15 — 03:15 | Arquitetura Técnica
+“O sistema tem 5 módulos: frontend (React + Viem), backend (Supabase), circuito ZK (Circom), automação (N8N) e smart contract (Foundry). Eles se conectam via API, função edge e verificação ZK. O circuito principal garante que score >= threshold sem revelar valores.”
+
+---
+
+⏱️ 03:15 — 04:15 | Demonstração Técnica
+“O usuário se cadastra, envia um pedido de empréstimo. O agente N8N calcula score 720. O app gera uma prova zk que mostra que 720 ≥ 650 sem expor o valor. Essa prova é verificada via ZKVerify. Se válida, o botão de 'financiar' aparece para investidores.”
+
+---
+
+⏱️ 04:15 — 05:00 | Diferenciais Técnicos
+“Privacidade real: o score nunca é revelado. Verificação formal com snarkjs. Modularidade: cada módulo pode ser trocado, integrado ou auditado separadamente. O sistema é preparado para multi-chain.”
+
+---
+
+⏱️ 05:00 — 06:00 | Visão de Futuro
+“Vamos expandir para score de reputação, deploy em múltiplas redes, e parcerias com cooperativas e fintechs sociais. A base é sólida e ética: privacidade, acesso e transparência.”
+
+---
+
+🧠 Dica final: treine o tempo e adapte falas conforme o estilo da banca!
