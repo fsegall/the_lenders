@@ -89,7 +89,7 @@ O módulo a ser incluído em `foundry/` conterá:
 
 ---
 
-## 🧪 Como contribuir
+## [`🧪 Como contribuir`](roadmap.md)
 
 Clone o projeto, instale as dependências em cada módulo, e siga os respectivos READMEs. Cada módulo é autônomo, mas se comunica com os demais via APIs, contratos e banco.
 
