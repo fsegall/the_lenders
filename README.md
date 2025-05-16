@@ -4,7 +4,7 @@ Este projeto é um MVP para uma plataforma que conecta pequenos empreendedores a
 
 ---
 
-## 🧱 ['Arquitetura Modular'](Arquitetura.md)
+## 🧱 [`Arquitetura Modular`](Arquitetura.md)
 
 | Módulo             | Descrição |
 |--------------------|-----------|
