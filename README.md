@@ -97,4 +97,4 @@ Clone o projeto, instale as dependências em cada módulo, e siga os respectivos
 
 ## 🧠 Autores
 
-Desenvolvido por **Felipe Segall**, **Fêlix General**, **Paulo Marinato** para o ZK Hackathon com foco em soluções de impacto social e privacidade.
+Desenvolvido por **Felipe Segall**, **Fêlix Rock Rodrigues**, **Paulo Marinato** para o ZK Hackathon com foco em soluções de impacto social e privacidade.
