@@ -25,7 +25,6 @@ Este módulo representa o componente de automação responsável por calcular e 
 ## 🔁 Fluxo Geral
 
 ```
-flowchart TD
     A[Usuário cria perfil na plataforma] --> B[Supabase armazena perfil]
     B --> C[N8N detecta novo perfil ou requisição de empréstimo]
     C --> D[Busca dados do usuário (perfil, histórico, etc)]
