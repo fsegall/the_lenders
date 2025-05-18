@@ -43,7 +43,7 @@ Demonstrar a viabilidade de um sistema de empréstimos baseado em provas ZK para
 
 **Link para o MVP funcional:**  
 🔗 [ZKFinance](https://entre-chain-lend.vercel.app)  
-📎 [Documentação no GitHub](https://github.com/username/entre-chain-lend)
+📎 [Documentação no GitHub](https://github.com/fsegall/the_lenders)
 
 ---
 
@@ -95,10 +95,13 @@ Demonstrar a viabilidade de um sistema de empréstimos baseado em provas ZK para
 **Responsável por enviar a entrega:**  
 - Felipe Segall  
   📩 contato: https://linkedin.com/in/fsegall
+- Felix Rodrigues
+  📩 contato: contatogeneralrock@gmail.com
+  
 
 ---
 
-## 🖼 8. Identidade Visual (opcional)
+## 🖼 8. Identidade Visual
 
 **Arte de perfil do time:**  
 a atualizar ...
