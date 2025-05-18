@@ -89,6 +89,7 @@ Demonstrar a viabilidade de um sistema de empréstimos baseado em provas ZK para
 **Integrantes do grupo:**  
 - Felipe Segall — Código do MVP full-stack, ideação, ZK, documentação.
 - Felix \"Rock\" Rodrigues — Automação, plano de negócios, design, ideação, pitch, documentação.
+- Laura Eckeert - UI/UX Designer
 - Paulo Marinato — Plano de negócios, análise de ambiente DeFi, oportunidades de monetização, benchmarking e documentação.
 
 **Responsável por enviar a entrega:**  
