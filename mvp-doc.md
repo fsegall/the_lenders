@@ -1,4 +1,4 @@
-# 📘 Documentação de Aplicação
+# 📘 Documentação de Aplicação - ![Logo do projeto](logo_zk.png)
 
 ## 🧭 1. Visão Geral da Aplicação
 
@@ -42,7 +42,7 @@ Demonstrar a viabilidade de um sistema de empréstimos baseado em provas ZK para
 ✅ Cumpre os critérios mínimos definidos em aula  
 
 **Link para o MVP funcional:**  
-🔗 [https://entre-chain-lend.vercel.app](https://entre-chain-lend.vercel.app)  
+🔗 [ZKFinance](https://entre-chain-lend.vercel.app)  
 📎 [Documentação no GitHub](https://github.com/username/entre-chain-lend)
 
 ---
@@ -102,7 +102,7 @@ Demonstrar a viabilidade de um sistema de empréstimos baseado em provas ZK para
 
 **Arte de perfil do time:**  
 a atualizar ...
-![Logo do projeto](https://entre-chain-lend.vercel.app/logo.svg)
+![Logo do projeto](logo_zk.png)
 
 ---
 
