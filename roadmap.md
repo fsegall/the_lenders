@@ -13,7 +13,7 @@
 
 ---
 
-## 🚩 Milestones e Issues
+## 🚩 Milestones e Issues --> [`Kanban Interativo`](kanban-roadmap-interativo.html)
 
 ### ✅ M1: Setup e Integrações Iniciais
 - [x] Setup do projeto base (React + Viem) — _`setup`, `frontend`_
@@ -33,9 +33,9 @@
 - [x] Verificar prova via ZKVerify com Edge Function — _`supabase`, `verificação`_
 
 ### ✅ M4: Smart Contracts e Reembolso
-- [ ] Criar smart contract de empréstimo (Foundry) — _`foundry`, `contrato`_
-- [ ] Testar contrato com Forge — _`foundry`, `testes`_
-- [ ] Implementar lógica de reembolso — _`solidity`, `contrato`_
+- [X] Criar smart contract de empréstimo (Foundry) — _`foundry`, `contrato`_
+- [X] Testar contrato com Forge — _`foundry`, `testes`_
+- [X] Implementar lógica de reembolso — _`solidity`, `contrato`_
 - [ ] Integrar contrato ao frontend (Viem) — _`web3`, `integração`_
 
 ### ✅ M5: Dashboard, Polimento e UI
@@ -47,4 +47,4 @@
 - [x] Criar documentação técnica por módulo — _`documentação`, `README`_
 - [x] Gerar diagramas ER e arquitetura — _`diagramas`, `visual`_
 - [x] Preparar pitch técnico (PDF + script) — _`pitch`, `apresentação`_
-- [ ] Gravar vídeo de apresentação do MVP — _`pitch`, `vídeo`_
+- [X] Gravar vídeo de apresentação do MVP — _`pitch`, `vídeo`_
