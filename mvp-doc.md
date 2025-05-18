@@ -36,10 +36,9 @@ Demonstrar a viabilidade de um sistema de empréstimos baseado em provas ZK para
 ## 🧪 3. MVP e Critérios de Aceitação
 
 **O MVP está:**  
-✅ Funcionando com protótipo clicável no Lovable  
-✅ Com deploy publicado no Vercel  
+✅ Funcionando com protótipo clicável na Vercel
 ✅ Com documentação técnica clara (README + diagramas + pitch)  
-✅ Cumpre os critérios mínimos definidos em aula  
+✅ Cumpre os critérios mínimos definidos no regulemento do Hakathon 
 
 **Link para o MVP funcional:**  
 🔗 [ZKFinance](https://entre-chain-lend.vercel.app)  
