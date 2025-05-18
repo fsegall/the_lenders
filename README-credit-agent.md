@@ -1,57 +1,52 @@
-# 🤖 Módulo `credit-agent/` — Análise de Crédito Automatizada (N8N)
+# 🤖 credit-agent
 
-Este módulo representa o componente de automação responsável por calcular e entregar o `score de crédito` do usuário para a aplicação. Utiliza o [n8n.io](https://n8n.io) como plataforma de orquestração de fluxos de dados e agentes inteligentes.
-
----
-
-## 🧭 Objetivo
-
-- Calcular um score de crédito a partir de dados externos e internos
-- Retornar o resultado para o frontend ou backend
-- Ativar a geração da prova ZK com base no score retornado
+Este módulo representa o agente automatizado de análise de crédito do MVP, implementado com o [n8n](https://n8n.io/). Ele é responsável por calcular o score de crédito do cliente com base nos dados do Supabase e emitir uma resposta que será usada para gerar provas de conhecimento zero no módulo `zk-credit`.
 
 ---
 
-## ⚙️ Stack
+## 🧠 Visão Geral
 
-- [n8n](https://n8n.io/) — plataforma de automação open-source
-- Supabase REST API
-- Webhooks HTTP
-- (Opcional) APIs externas para consulta de score
-- (Futuro) Integração com IA ou ML para cálculo do score
-
----
-
-## 🔁 Fluxo Geral
-
-```
-    A[Usuário cria perfil na plataforma] --> B[Supabase armazena perfil]
-    B --> C[N8N detecta novo perfil ou requisição de empréstimo]
-    C --> D[Busca dados do usuário (perfil, histórico, etc)]
-    D --> E[Calcula score]
-    E --> F[Retorna JSON para frontend ou backend]
-    F --> G[Geração da prova ZK com zk-credit]
-    G --> H[Verificação com ZKVerify via Supabase]
+```mermaid
+graph TD
+  A[Webhook de Entrada] --> B[Consulta Supabase (tabela: profiles)]
+  B --> C[Cálculo do Score]
+  C --> D[Formatação da Resposta]
+  D --> E[Webhook de Saída]
+  D --> F[Webhook para zk-credit]
 ```
 
 ---
 
-## 🧱 Estrutura Recomendada
+## 📌 Webhook
 
-```
-credit-agent/
-├── flows/
-│   └── calculate_credit_score.json     # Export do fluxo N8N
-├── docs/
-│   └── fluxo-anotado.png               # Fluxograma explicativo
-└── README.md
+- **Método**: `GET`
+- **Endpoint**: `/webhook/credit-analysis`
+- **Hospedagem**: `https://webhook.n8n.alifa.com.br/webhook/credit-analysis`
+- **Exemplo de chamada**:
+
+```bash
+curl https://webhook.n8n.alifa.com.br/webhook/credit-analysis
 ```
 
 ---
 
-## 📤 Formato de Saída Esperado
+## 📊 Lógica de Score
 
-O agente pode retornar um JSON como:
+A lógica implementada no fluxo considera:
+
+- `+100` se renda > 5000
+- `+50` se tempo de emprego > 2 anos
+- `+70` se possui imóvel
+- `-80` se possui dívidas
+- `-100` por inadimplências
+- Score é normalizado entre 300 e 850
+- Threshold mínimo: `650`
+
+---
+
+## 📤 Saídas
+
+### 1. Resposta ao cliente
 
 ```json
 {
@@ -61,11 +56,7 @@ O agente pode retornar um JSON como:
 }
 ```
 
----
-
-## 🧪 Integração com zk-credit
-
-A saída do agente será usada como `input.json` para gerar a prova ZK localmente:
+### 2. Payload para o módulo zk-credit
 
 ```json
 {
@@ -76,34 +67,23 @@ A saída do agente será usada como `input.json` para gerar a prova ZK localment
 
 ---
 
-## 🔌 Integração com Supabase
+## 📁 Conteúdo
 
-Você pode:
-- Usar webhook para acionar o N8N com o `user_id`
-- Consultar a tabela `profiles` diretamente via HTTP
-- Inserir score calculado em uma tabela `credit_scores` com FK para `profiles`
+- `workflow_hackathon.json`: arquivo do fluxo exportado do n8n
 
----
-
-## 🔒 Privacidade e Segurança
-
-- O `score` é tratado como **variável temporária**
-- Nunca deve ser salvo em campos públicos
-- A única saída pública é `passed = 1` dentro da prova ZK
+> Pode ser importado diretamente no painel do n8n para reuso ou edição.
 
 ---
 
-## 🚀 Como testar localmente
+## 🔗 Integração com zk-credit
 
-1. Inicie o N8N via Docker ou CLI:
-   ```bash
-   docker run -it --rm      -p 5678:5678      -v ~/.n8n:/home/node/.n8n      n8nio/n8n
-   ```
-
-2. Importe o fluxo `calculate_credit_score.json` no editor visual
-
-3. Teste o webhook via Postman ou diretamente do frontend
+O frontend do projeto consome a resposta deste agente, e então encaminha os dados recebidos para a função edge `credit-verify`, que gera a prova ZK e envia o commitment para a blockchain.
 
 ---
 
-> Desenvolvido como parte do MVP entre-chain-lend por Felipe Segall
+## ✅ Status
+
+- [x] Workflow funcional hospedado
+- [x] Conexão com Supabase
+- [x] Envio de score para zk-credit
+- [x] Testado com frontend + edge function
