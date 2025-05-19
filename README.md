@@ -1,4 +1,4 @@
-# 🤝 entre-chain-lend ([site - MVP - English](https://zkfiannce.com.br)) — MVP de Plataforma Descentralizada de Empréstimos com ZK Proofs ###[`Ler no GitHub Pages`](https://fsegall.github.io/the_lenders/)
+# 🤝 entre-chain-lend ([site - MVP - English - configurando domínio próprio](https://zkfiannce.com.br)) — MVP de Plataforma Descentralizada de Empréstimos com ZK Proofs ###[`Ler no GitHub Pages`](https://fsegall.github.io/the_lenders/)
 
 Este projeto é um MVP para uma plataforma que conecta pequenos empreendedores a financiadores, utilizando contratos inteligentes, provas ZK de análise de crédito e verificação de elegibilidade com preservação de privacidade.
 
