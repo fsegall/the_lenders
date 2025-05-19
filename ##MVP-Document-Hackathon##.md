@@ -103,7 +103,7 @@ Demonstrar a viabilidade de um sistema de empréstimos baseado em provas ZK para
 ## 🖼 8. Identidade Visual
 
 **Arte de perfil do time:**  
-a atualizar ...
+[Front-end em português](https://zkfinance.framer.website/)
 ![Logo do projeto](logo_zk.png)
 
 ---
