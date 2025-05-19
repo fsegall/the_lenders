@@ -6,6 +6,8 @@ Este projeto é um MVP para uma plataforma que conecta pequenos empreendedores a
 
 ## 🧱 [`Arquitetura Modular`](Arquitetura_ChatGPT.png)
 
+![`Arquitetura Modular`](Arquitetura_ChatGPT.png)
+
 | Módulo             | Descrição |
 |--------------------|-----------|
 | [`frontend/`](README-frontend.md) | Aplicação React que permite criação de pedidos e visualização de oportunidades de empréstimo. Integra com contratos e Supabase. |
