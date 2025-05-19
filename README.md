@@ -4,7 +4,7 @@ Este projeto é um MVP para uma plataforma que conecta pequenos empreendedores a
 
 ---
 
-## 🧱 [`Arquitetura Modular`](Arquitetura.png)
+## 🧱 [`Arquitetura Modular`](Arquitetura_ChatGPT.png)
 
 | Módulo             | Descrição |
 |--------------------|-----------|
